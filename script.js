@@ -37,3 +37,21 @@ photoInput.addEventListener("change", function () {
     }
 
 });
+const downloadBtn = document.getElementById("downloadBtn");
+
+downloadBtn.addEventListener("click", function () {
+
+    const card = document.querySelector(".card");
+
+    html2canvas(card).then(function(canvas) {
+
+        const link = document.createElement("a");
+
+        link.download = "my-id-card.png";
+        link.href = canvas.toDataURL("image/png");
+
+        link.click();
+
+    });
+
+});
