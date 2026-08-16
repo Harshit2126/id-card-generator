@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ID Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>ID Card Generator</h1>
+
+    <div class="generator">
+
+        <!-- Controls -->
+        <div class="controls">
+            <label>Photo</label>
+
+<input
+    type="file"
+    id="photoInput"
+    accept="image/*"
+>
+
+            <label>Name</label>
+            <input
+                type="text"
+                id="nameInput"
+                placeholder="Enter your name"
+            >
+
+            <label>ID</label>
+            <input
+                type="text"
+                id="idInput"
+                placeholder="Enter your ID"
+            >
+
+        </div>
+
+
+        <!-- Card -->
+        <div class="card">
+
+            <h2>IDENTIFICATION CARD</h2>
+
+            <div class="photo">
+    <img id="cardPhoto" src="" alt="Your Photo">
+</div>
+
+            <h3 id="cardName">YOUR NAME</h3>
+
+            <p id="cardId">ID: 000000</p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
